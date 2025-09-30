@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -63,8 +63,8 @@ export default defineConfig([
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
+        // project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        // tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
