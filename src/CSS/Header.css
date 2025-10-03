@@ -1,11 +1,47 @@
-.head {
+.head-font {
   padding: 1.5em;
-   color: #fdfdfc; 
+   color: white; 
    
 }
 
 .padding {
-    padding: 1.5em;
-    width: 100%;
-    background-color: #060404;
+    padding: 1.2em;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.logo {
+  height: 7em;
+  /* padding-bottom: 0px; */
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.main-header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Aligns items to the top */
+  width: 100%;
+  margin-top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.left-container {
+  /* width: 20%; Example width, can be adjusted */
+  padding: 5px;
+}
+
+.right-container {
+  width: 88%; /* Example width */
+  padding: 20px;
+  background-color: black;
+  /* box-sizing: border-box; */
 }

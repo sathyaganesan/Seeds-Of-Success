@@ -1,12 +1,27 @@
-.logo {
-  height: 15em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.home {
+  display: grid;
+  gap: 24px;
+  padding: 16px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.video-wrap {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  /* align-items: center;       vertical center */
+  /* position: relative; */
+  /* width: 100%; */
+  aspect-ratio: 16 / 9;    /* keeps the shape responsive */
+  /* overflow: hidden; */
+  /* border-radius: 12px; */
+  /* max-width: 100%;  */
+  /* height: auto; */
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.video-wrap .video {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;       /* or "contain" if you prefer letterboxing */
+  display: block;
+  border: 0;
+  padding: 20px
 }

@@ -1,0 +1,26 @@
+.btn-block {
+  /* display: flex; */
+  flex-direction: column;
+  padding-top: 10px;
+  align-items: flex-start;
+  background-color: #0d2b76; 
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #b31444; 
+  color: white;               /* text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0px;         /*rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+   /* margin: 10px; */
+}
+
+.btn:hover {
+  background-color: #f4abc2; /* darker on hover */
+}
