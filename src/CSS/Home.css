@@ -6,22 +6,70 @@
 
 .video-wrap {
   display: flex;
-  justify-content: center;   /* horizontal center */
-  /* align-items: center;       vertical center */
-  /* position: relative; */
-  /* width: 100%; */
-  aspect-ratio: 16 / 9;    /* keeps the shape responsive */
-  /* overflow: hidden; */
-  /* border-radius: 12px; */
-  /* max-width: 100%;  */
-  /* height: auto; */
+  justify-content: center;   /* horizontal center */ 
 }
 
-.video-wrap .video {
-  width: 60%;
-  height: 60%;
+.video {
+  width: 85%;
+  height: 85%;
   object-fit: cover;       /* or "contain" if you prefer letterboxing */
   display: block;
   border: 0;
-  padding: 20px
+  padding: 20px;
+  aspect-ratio: 16 / 9;   /* keeps the shape responsive */
+  
+}
+
+.split-container {
+  display: flex;
+  /* height: 100vh;         full page height */
+}
+
+.font-container,
+.img-container {
+  flex: 1;               /* both take equal width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 20px; */
+}
+
+.font-container {
+    flex-direction: column;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.margin {
+    margin: 0px;
+}
+
+.tab-container {
+    display: flex;
+}
+
+.tab {
+  flex: 1;                 /* each takes equal width */
+  display: flex;
+  justify-content: flex-start; /* centers content horizontally */
+  align-items: center;     /*centers content vertically*/
+  flex-direction: column;       /* stack h3 & p vertically */
+  font-size: 24px;
+  color: white;
+}
+
+.tab1 { background-color: #971f4d; }
+.tab2 { background-color: #1f89ec; }
+.tab3 { background-color: #0442a0; }
+
+.link {
+  color: white;
+  margin: 0px;
+  font-size: 30px;
+  transition: font-size 0.3s ease;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: rgb(95, 90, 90);
 }
