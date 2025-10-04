@@ -1,4 +1,4 @@
-#root {
+/* #root {
   margin: 0;
   text-align: center;
   width: 100%;
@@ -19,4 +19,45 @@
 
 .read-the-docs {
   color: #888;
-} */
+}  */
+
+/* Responsive design */
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Optional: smooth animation for logos if motion is allowed */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+/* ✅ Mobile-friendly adjustments */
+@media (max-width: 600px) {
+  #root {
+    padding: 10px;         /* smaller padding on mobile */
+    text-align: center;
+  }
+
+  .card {
+    padding: 1em;          /* reduce inner spacing */
+  }
+
+  .read-the-docs {
+    font-size: 14px;       /* smaller text for mobile */
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from './Home.jsx';
-import About from './About.jsx';
-import OurTeam from './OurTeam.jsx';
-import GetInvolved from './GetInvolved.jsx';
-import SignUpVolunteer from './SignUpVolunteer.jsx';
+import'./Home.jsx';
+import './About.jsx';
+import './OurTeam.jsx';
+import'./GetInvolved.jsx';
+import'./SignUpVolunteer.jsx';
 import { Link, BrowserRouter as Route, Router, Routes } from 'react-router-dom';
 import seedsLogo from '../assets/seeds.svg';
 import '../CSS/Header.css';

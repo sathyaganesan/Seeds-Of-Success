@@ -60,7 +60,7 @@ function OurTeam() {
             <div className="card">
                 <img src = {seedslogo} alt = "card " className="card-image"/>
                 <p>Mentor & Tutor</p>
-                <h3> Tara Venkatesan</h3>
+                <h3> Thara Venkatesan</h3>
                 <p>Thara is a second-year student at the College of William & Mary in Williamsburg, Virginia. 
                     She serves as the key mentor to 'Seeds of Success' founders . Drawing on her own leadership experience, 
                     she provides guidance and strategic support to the emerging organization.
