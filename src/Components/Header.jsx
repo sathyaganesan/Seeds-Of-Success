@@ -1,23 +1,28 @@
-import React from 'react';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import'./Home.jsx';
 import './About.jsx';
 import './OurTeam.jsx';
 import'./GetInvolved.jsx';
 import'./SignUpVolunteer.jsx';
-import { Link, BrowserRouter as Route, Router, Routes } from 'react-router-dom';
 import seedsLogo from '../assets/seeds.svg';
 import '../CSS/Header.css';
 
-function Header() {
+export default function Header() {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="main-header" >
-      <div className='left-container'>
-        <Link to="/">
-          <img src={seedsLogo} className="logo" alt="Vite logo" />
-        </Link>
-      </div>
+      <img src={seedsLogo} className="logo" alt="Vite logo" /> 
       <div className='right-container'>
-        <nav className='padding'>
+        <nav 
+          id="primary-nav" 
+          className={`nav ${open ? "open" : ""}`} padding
+          onClick={(e) => {
+            if (e.target.closest("a")) setOpen(false); // close if a link was clicked
+          }}
+          >
             <Link to = "/" className='head-font'> Home </Link>
             <Link to = "/about" className='head-font'> About </Link>
             <Link to = "/ourTeam" className='head-font'> Our Team </Link>
@@ -25,7 +30,14 @@ function Header() {
             <Link to = "/signUpVolunteer" className='head-font'> Sign Up Volunteer </Link>
         </nav>
       </div>
+      <button
+          className="nav-toggle"
+          aria-expanded={open}
+          aria-controls="primary-nav"
+          onClick={() => setOpen(o => !o)}
+        >
+          ☰
+        </button>
     </header>
   );
 }
-export default Header;

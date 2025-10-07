@@ -1,4 +1,4 @@
-.head-font {
+/*.head-font {
   padding: 1.5em;
    color: rgb(88, 87, 87); 
    
@@ -27,7 +27,7 @@
   top: 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; /* Aligns items to the top */
+  align-items: flex-end; /* Aligns items to the top 
   width: 100%;
   margin-top: 0;
   box-shadow: 0 2px 4px rgba(247, 242, 242, 0.1);
@@ -36,12 +36,94 @@
 }
 
 .right-container {
-  width: 95%; /* Example width */
+  width: 95%; /* Example width 
   padding: 20px;
   background-color: white;
   box-sizing: border-box;
 }
 
-/* .left-container {
-  /* width: 20%; Example width, can be adjusted */
-  /* padding: 5px; } */
+/* Responsive Design */
+.main-header {
+  position: sticky; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+  background:#fff; 
+  z-index:1000;
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between;
+  padding: 10px 16px; 
+  box-shadow:0 2px 4px rgba(0,0,0,.1);
+}
+
+/* .logo-container{
+  display:flex; 
+  align-items:center; 
+  gap:12px;
+} */
+
+.logo { 
+  height: clamp(44px, 8vw, 112px);
+  width:auto; 
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.nav-toggle { 
+  display: none;
+  font-size:24px; 
+  background:none; 
+  border:none; 
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.right-container {
+  width: 95%; /* Example width */
+  padding: 20px;
+  background-color: white;
+  box-sizing: border-box;
+
+}
+
+.nav { 
+  display:flex; 
+  gap:16px; 
+  justify-content: flex-end;
+}
+
+.padding {
+  padding: clamp(0.5rem, 2vw, 1.2rem);
+  padding-bottom: 0;
+  text-align: right;
+}
+
+.head-font {
+  text-decoration:none; 
+  color:#222;
+  padding:10px 12px; 
+  border-radius:8px; 
+  font-weight:600;
+  font-size: clamp(14px, 2.2vw, 16px);
+  /* width: 70%; */
+}
+
+@media (max-width: 768px) {
+  .nav-toggle { display:block; }
+
+  .nav {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background:#fff;
+    display: flex; 
+    flex-direction: column;
+    gap: 8px; 
+    padding: 10px 16px;
+    transform-origin: top;
+    transform: scaleY(0);           /* hidden by default */
+    transition: transform .2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  }
+  .nav.open { transform: scaleY(1); } /* show when toggled */
+}

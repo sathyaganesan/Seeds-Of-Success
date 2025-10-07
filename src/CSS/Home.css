@@ -134,7 +134,7 @@
 /* Tabs row */
 .tab-container {
   display: flex;
-  /* gap: var(--space-md); */
+  padding-top: var(--space-md);
 }
 
 .tab {
@@ -159,7 +159,7 @@
   color: #fff;
   margin: 0;
   font-weight: 700;
-  font-size: clamp(18px, 3.2vw, 30px);  /* fluid type */
+  font-size: clamp(18px, 3.2vw, 35px);  /* fluid type */
   line-height: 1.2;
   text-decoration: none;
   transition: transform 0.2s ease, color 0.2s ease;
