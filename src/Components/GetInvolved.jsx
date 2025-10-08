@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import '../CSS/getInvolved.css';
+import '../CSS/GetInvolved.css';
 
 export default function GetInvolved() {
   return(
