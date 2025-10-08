@@ -147,7 +147,6 @@
   color: #fff;
   padding: clamp(12px, 3vw, 24px);
   min-height: 110px;          /* consistent tap targets */
-  /* border-radius: var(--radius); */
 }
 
 .tab1 { background-color: #971f4d; }
