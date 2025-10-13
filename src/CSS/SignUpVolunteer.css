@@ -1,0 +1,19 @@
+.bottom-container {
+  width: 65%;                /* take 75% of the page */
+  margin: 0 auto;            /* center horizontally */
+  text-align: center;          /* keep text left-aligned (optional) */
+  line-height: 1.6;
+  font-size: clamp(1.75rem, 1.1vw + 0.5rem, 1rem);
+  padding: 1.25rem;
+
+  /* prevent overflow on long words/URLs */
+  overflow-wrap: anywhere;   /* modern */
+  word-break: break-word;    /* fallback */
+}
+
+.inline-link {
+   margin-left: 0.5rem; }   /* space before the link */
+
+@media (max-width: 768px) {
+  .text-wrap-75 { width: 90%; }
+}

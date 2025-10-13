@@ -1,0 +1,85 @@
+/* .tutor-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(16px, 4vw, 25px) 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+  line-height: 1.2;
+} */
+
+.tutor-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: clamp(12px, 3.5vw, 25px);
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.margin {
+  margin-top: 0;
+}
+
+.list-container{
+  margin-top: clamp(12px, 2.5vw, 24px);
+  padding-inline: clamp(16px, 5vw, 40px);
+  max-width: 1000px;
+   margin-inline: auto;           /* center on wide screens */
+  box-sizing: border-box;
+}
+
+/* .list-container {
+  margin-top: 1.5rem;
+  padding: 0 10rem;
+} */
+
+/* .para-title {
+  text-align: left;
+  margin: 0;
+} */
+
+.para-title{
+  text-align: left;
+  margin-top: 0 0 clamp(8px, 1.6vw, 14px) 0;
+  font-size: clamp(1rem, 1.2vw + 0.6rem, 1.25rem);
+  line-height: 1.4;
+}
+
+/* .tutor-list {
+  text-align: left;
+  margin-top: 0;
+  line-height: 2rem;
+  font-size: 1.25rem;
+} */
+
+.tutor-list{
+  list-style: disc;
+  text-align: left;
+  /* padding-left: 1.25rem; */
+  margin: 0;
+  /* display: grid; */
+  grid-template-columns: 1fr;     /*phones*/
+  gap: clamp(6px, 1.2vw, 12px);
+  font-size: clamp(1rem, 1.1vw + 0.5rem, 1.25rem);
+  line-height: 1.6;
+}
+
+.tutor-list li{
+  break-inside: avoid; 
+}
+
+/* Tablet and up */
+@media (min-width: 768px){
+  .tutor-list{ grid-template-columns: 1fr 1fr; }
+}
+
+/* Optional: very large screens */
+@media (min-width: 1200px){
+  .list-container{ max-width: 1200px; }
+}

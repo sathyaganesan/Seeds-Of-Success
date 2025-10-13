@@ -51,7 +51,7 @@
   background:#fff; 
   z-index:1000;
   display:flex; 
-  align-items:center; 
+  align-items:end; 
   justify-content:space-between;
   padding: 10px 16px; 
   box-shadow:0 2px 4px rgba(0,0,0,.1);
@@ -64,7 +64,7 @@
 } */
 
 .logo { 
-  height: clamp(44px, 8vw, 112px);
+  height: clamp(44px, 20vw, 120px);
   width:auto; 
   will-change: filter;
   transition: filter 300ms;
@@ -80,11 +80,8 @@
 }
 
 .right-container {
-  width: 95%; /* Example width */
-  padding: 20px;
   background-color: white;
   box-sizing: border-box;
-
 }
 
 .nav { 

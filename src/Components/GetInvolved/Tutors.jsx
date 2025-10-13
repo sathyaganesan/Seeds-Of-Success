@@ -1,20 +1,22 @@
+import '../../CSS/GetInvolved/Tutors.css';
+
 export default function Tutors() {
   return(
     <>
       <div>
         <div>
-          <h1> Your Role as a Tutor</h1>
-          <h3>Tutors are the heart and backbone of this program</h3>
+          <h1 className="tutor-title"> Your Role as a Tutor</h1>
+          <h3 className='margin'>Tutors are the heart and backbone of this program</h3>
         </div>
-        <section>
-          <h3>Prerequisites: ​</h3>
-            <ul>
+        <section className='list-container'>
+          <h3 className="para-title">Prerequisites: ​</h3>
+            <ul className="tutor-list">
               <li>Must be fluent in Tamil.</li>
               <li>Passionate about helping kids learn and grow.</li>
               <li>Ready to commit time and energy to making a difference.</li>
             </ul>
-          <h3>Responsibilities: </h3>
-            <ul>
+          <h3 className="para-title">Responsibilities: </h3>
+            <ul className="tutor-list">
               <li>Conduct engaging English lessons based on our standardized curriculum for your student.</li>
               <li>Use Tamil strategically to explain concepts and build rapport.</li>
               <li>Encourage student participation and curiosity.</li>
@@ -23,8 +25,8 @@ export default function Tutors() {
               <li>Keep track of time, flow, lessons taught.</li>
               <li>If this role interests you, there will be a follow-up orientation session to attend. </li>
             </ul>
-          <h3>Time Commitment: </h3>
-            <ul>
+          <h3 className="para-title">Time Commitment: </h3>
+            <ul className="tutor-list">
               <li>Minimum of 1 - 1.25 hours/week . This includes tutoring session (1 hour) + any homework help (~.25). Any more time offered is beneficial for the student.</li>
             </ul>
         </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import seedsLogo from '../assets/seeds.svg';
-import '../../public/SeedsofSuccess.mp4';
+import '../assets/SeedsofSuccess.mp4';
 import '../CSS/Home.css'
 import './About';
 import './OurTeam';
