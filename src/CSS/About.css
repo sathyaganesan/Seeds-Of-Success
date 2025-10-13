@@ -1,5 +1,4 @@
 .btn-block {
-  /* display: flex; */
   flex-direction: column;
   padding-top: 10px;
   align-items: flex-start;

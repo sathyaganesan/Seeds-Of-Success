@@ -1,47 +1,3 @@
-/*.head-font {
-  padding: 1.5em;
-   color: rgb(88, 87, 87); 
-   
-}
-
-.padding {
-    padding: 1.2em;
-    padding-bottom: 0px;
-    text-align: right;
-}
-
-.logo {
-  height: 7em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.main-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; /* Aligns items to the top 
-  width: 100%;
-  margin-top: 0;
-  box-shadow: 0 2px 4px rgba(247, 242, 242, 0.1);
-  z-index: 1000;
-  background-color: #ffffff;
-}
-
-.right-container {
-  width: 95%; /* Example width 
-  padding: 20px;
-  background-color: white;
-  box-sizing: border-box;
-}
-
 /* Responsive Design */
 .main-header {
   position: sticky; 
@@ -56,12 +12,6 @@
   padding: 10px 16px; 
   box-shadow:0 2px 4px rgba(0,0,0,.1);
 }
-
-/* .logo-container{
-  display:flex; 
-  align-items:center; 
-  gap:12px;
-} */
 
 .logo { 
   height: clamp(44px, 20vw, 120px);
@@ -103,7 +53,6 @@
   border-radius:8px; 
   font-weight:600;
   font-size: clamp(14px, 2.2vw, 16px);
-  /* width: 70%; */
 }
 
 @media (max-width: 768px) {
@@ -111,7 +60,9 @@
 
   .nav {
     position: absolute;
-    top: 100%; left: 0; right: 0;
+    top: 100%; 
+    left: 0; 
+    right: 0;
     background:#fff;
     display: flex; 
     flex-direction: column;

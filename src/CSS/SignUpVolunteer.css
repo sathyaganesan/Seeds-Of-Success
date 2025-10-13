@@ -3,7 +3,7 @@
   margin: 0 auto;            /* center horizontally */
   text-align: center;          /* keep text left-aligned (optional) */
   line-height: 1.6;
-  font-size: clamp(1.75rem, 1.1vw + 0.5rem, 1rem);
+  font-size: clamp(1rem, 1.2vw + .6rem, 1.2rem);
   padding: 1.25rem;
 
   /* prevent overflow on long words/URLs */

@@ -1,87 +1,12 @@
-/* .home {
-  display: grid;
-  gap: 24px;
-  padding: 16px;
-} */
-
-/* .video-wrap {
-  display: flex;
-  justify-content: center;  
-} */
-
-/* .video {
-  width: 85%;
-  height: 85%;
-  object-fit: cover;       
-  display: block;
-  border: 0;
-  padding: 20px;
-  aspect-ratio: 16 / 9;   
-} */
-
-/* .split-container {
-  display: flex;
-  /* height: 100vh;         
-} */
-
-/* .font-container,
-.img-container {
-  flex: 1;               
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-} */
-
-/* .font-container {
-    flex-direction: column;
-    font-style: italic;
-    font-size: x-large;
-} */
-
-/* .margin {
-    margin: 0px;
-} */
-
-/* .tab-container {
-    display: flex;
-} */
-
-/* .tab {
-  flex: 1;                 
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;     
-  flex-direction: column;       
-  font-size: 20px;
-  color: white;
-} */
-
-/* .tab1 { background-color: #971f4d; }
-.tab2 { background-color: #1f89ec; }
-.tab3 { background-color: #0442a0; } */
-
-/* .link {
-  color: white;
-  margin: 0px;
-  font-size: 30px;
-  transition: font-size 0.3s ease;
-  font-weight: bold;
-} */
-
-/* .link:hover {
-  color: rgb(95, 90, 90);
-} */
-
 /* Responsive web design */
 /* ---------- Base: fluid, accessible defaults ---------- */
-:root{
+ :root{
   /* tweak these if you want bigger/smaller overall */
-  --space-sm: 12px;
+   --space-sm: 12px;
   --space-md: 16px;
   --space-lg: 24px;
   --radius: 12px;
-}
+} 
 
 .home {
   display: grid;
