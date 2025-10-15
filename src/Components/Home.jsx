@@ -37,7 +37,7 @@ function Home() {
                 </div>
                 <div className='tab tab2'>
                     <h3 className='margin'>
-                        <Link to="/about" className='link'> Our Team </Link>    
+                        <Link to="/OurTeam" className='link'> Our Team </Link>    
                     </h3>
                     <p>
                         Founders, Tutors, Students
