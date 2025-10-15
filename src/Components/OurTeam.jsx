@@ -1,12 +1,10 @@
-import React from "react";
-import mithra from '../assets/MithraVenkatesan.svg';
-import nila from '../assets/NilaLoganathan.svg';
-import kavin from '../assets/KavinLoganathan.svg';
-import tara from '../assets/TaraVenkatesan.svg';
-import seedslogo from '../assets/seeds.svg'
+import mithra from '../assets/Chuttu.jpg';
+import nila from '../assets/NilaLoganathan.jpg';
+import kavin from '../assets/KavinLoganathan.jpg';
+import thara from '../assets/TharaVenkatesan.jpg';
 import '../CSS/OurTeam.css';
 
-function OurTeam() {
+export default function OurTeam() {
     return(
     <div>
         <div>
@@ -58,7 +56,7 @@ function OurTeam() {
             </div>
 
             <div className="card">
-                <img src = {seedslogo} alt = "card " className="card-image"/>
+                <img src = {thara} alt = "card " className="card-image"/>
                 <p>Mentor & Tutor</p>
                 <h3> Thara Venkatesan</h3>
                 <p>Thara is a second-year student at the College of William & Mary in Williamsburg, Virginia. 
@@ -74,4 +72,3 @@ function OurTeam() {
     </div>
     );
 }
-export default OurTeam;
