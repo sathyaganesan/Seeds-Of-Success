@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import seedsLogo from '../assets/seeds.svg';
-import '../assets/SeedsofSuccess.mp4';
+import Video from '../assets/SeedsofSuccess.mp4';
 import '../CSS/Home.css'
 import './About';
 import './OurTeam';
@@ -18,7 +18,7 @@ function Home() {
                 <div className='img-container'>
                     <video
                         className="video"
-                        src="/SeedsofSuccess.mp4"   // local file in /public
+                        src={Video}   // local file in /public
                         poster={seedsLogo}         // optional thumbnail
                         controls                    // show controls; remove if you auto-play
                         preload="metadata"          // faster first paint

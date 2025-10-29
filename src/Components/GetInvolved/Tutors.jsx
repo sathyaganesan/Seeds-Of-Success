@@ -1,8 +1,23 @@
+import { NavLink } from "react-router-dom";
 import '../../CSS/GetInvolved/Tutors.css';
 
 export default function Tutors() {
   return(
-    <>
+    <div className="main-container">
+      <div className="bottom-link-container">
+        <NavLink to = '/coordinators-mentors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Mentor/ Coordinator
+        </NavLink>
+        <NavLink to = '/curriculum-developers' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Curriculum Developer
+        </NavLink>
+        <NavLink to = '/technology-implementors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Technology Implementor
+        </NavLink>
+        <NavLink to = '/behind-the-scene-helpers' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Behind the Scene Helpers
+        </NavLink>
+      </div>
       <div>
         <div>
           <h1 className="tutor-title"> Your Role as a Tutor</h1>
@@ -30,8 +45,7 @@ export default function Tutors() {
               <li>Minimum of 1 - 1.25 hours/week . This includes tutoring session (1 hour) + any homework help (~.25). Any more time offered is beneficial for the student.</li>
             </ul>
         </section>
-        
     </div>
-    </>
-    );
+    </div>
+  );
 }

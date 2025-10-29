@@ -1,8 +1,22 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Coordinator() {
-    return(
-    <>
+  return(
+    <div className="main-container">
+      <div className="bottom-link-container">
+        <NavLink to = '/tutors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a tutuor
+        </NavLink>
+        <NavLink to = '/curriculum-developers' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Curriculum Developer
+        </NavLink>
+        <NavLink to = '/technology-implementors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Technology Implementor
+        </NavLink>
+        <NavLink to = '/behind-the-scene-helpers' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Behind the Scene Helpers
+        </NavLink>
+      </div>
       <div>
         <div>
           <h1 className="tutor-title"> Your Role as a Coordinator</h1>
@@ -29,8 +43,7 @@ export default function Coordinator() {
               <li>Minimum of 1 hours/week/student (can be in multiple sessions).</li>
             </ul>
         </section>
-        
-    </div>
-    </>
-    );
+      </div>
+  </div>
+  );
 }

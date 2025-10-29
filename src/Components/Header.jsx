@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import'./Home.jsx';
 import './About.jsx';
+import './AboutCard.jsx';
 import './OurTeam.jsx';
 import'./GetInvolved.jsx';
 import'./SignUpVolunteer.jsx';
@@ -14,7 +15,9 @@ export default function Header() {
 
   return (
     <header className="main-header" >
-      <img src={seedsLogo} className="logo" alt="Vite logo" /> 
+      <Link to="/">
+        <img src={seedsLogo} className="logo" alt="Vite logo" /> 
+      </Link>
       <div className='right-container'>
         <nav 
           id="primary-nav" 
@@ -25,6 +28,7 @@ export default function Header() {
           >
             <Link to = "/" className='head-font'> Home </Link>
             <Link to = "/about" className='head-font'> About </Link>
+            <Link to = "/aboutCard" className='head-font'> AboutCard </Link>
             <Link to = "/ourTeam" className='head-font'> Our Team </Link>
             <Link to = "/getInvolved" className='head-font'> Get Involved </Link>
             <Link to = "/signUpVolunteer" className='head-font'> Sign Up Volunteer </Link>

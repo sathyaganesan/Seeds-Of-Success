@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from'./Components/Header';
 import About from './Components/About';
+import AboutCard from './Components/AboutCard';
 import Home from './Components/Home';
 import GetInvolved from './Components/GetInvolved';
 import OurTeam from './Components/OurTeam';
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path = "/" element = {<Home />}/>
           <Route path = "/about" element = {<About />}/>
+          <Route path = "/aboutCard" element = {<AboutCard />}/>
           <Route path = "/ourTeam" element = {<OurTeam/>} />
           <Route path = "/getInvolved" element = {<GetInvolved/>} />
           <Route path = "/signupvolunteer" element = {<SignUpVolunteer/>} />

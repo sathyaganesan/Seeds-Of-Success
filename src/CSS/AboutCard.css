@@ -1,0 +1,112 @@
+:root {
+  --header-h: 100px;   /* desktop header height (adjust if needed) */
+  --btnbar-h: 256px;   /* your sticky button block */
+}
+
+/* ---------- Sticky block below header ---------- */
+.btn-block {
+  position: sticky;
+  top: var(--header-h);              /* sits directly under fixed header */
+  z-index: 950;
+  background: #213e8c;               /* non-transparent */
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  color: #fff;
+}
+
+.button-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px; 
+}
+
+.btn {
+  background-color: #df3467;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: clamp(14px, 1.2vw + 10px, 16px);
+  padding: clamp(8px, 1.2vw + 6px, 10px) clamp(14px, 2vw, 20px);
+  line-height: 1.2;
+  transition: background-color .2s ease;
+}
+
+.btn:hover {
+  background-color: #f4abc2;
+}
+
+.AboutCard-container {
+  justify-content: center; /* horizontal center */
+  padding: 16px;           /* mobile breathing room */
+  box-sizing: border-box;
+}
+
+.AboutCard {
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  overflow: hidden;                 /* keeps the title highlight flush */
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+  width: 100%;
+  max-width: 80%;
+  scroll-margin-top: calc(var(--btnbar-h) + 100px + var(--header-h));
+}
+
+/* highlighted title bar */
+.AboutCard-title {
+  margin: 0;
+  padding: 12px 16px;
+  background: #213e8c;             /* <— change this color */
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.AboutCard-body {
+  margin: 0;
+  /* padding-top: 14px; */
+  padding: clamp(22px, 3vw, 24px);
+  /* padding: 14px 16px 16px; */
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.AboutCard-body li {
+  text-align: left;
+}
+
+.AboutCard-body ul{
+  padding-top: 0px;
+}
+
+.AboutCard-container {
+  display: flex;
+  flex-wrap: wrap;               /* allows cards to wrap on smaller screens */
+  justify-content: center;       /* centers cards horizontally */
+  gap: 25px;                     /* space between cards */
+  padding: 20px;
+}
+
+/* Very small phones: ensure full width */
+@media (max-width: 480px){
+  .AboutCard { max-width: 100%; }
+}
+
+/* phones/tablets: column */
+@media (max-width: 768px) {
+  .button-block {
+    flex-direction: column;  /* stack vertically */
+    flex-wrap: nowrap;
+    align-items: stretch;    /* make children full width */
+  }
+
+  .button-block .btn {
+    width: 40%;
+    max-width: 520px;        /* optional cap */
+    margin-inline: auto;     /* keeps centered when capped */
+  }
+}
+

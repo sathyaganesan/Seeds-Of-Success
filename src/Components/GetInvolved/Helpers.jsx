@@ -1,6 +1,22 @@
+import { NavLink } from "react-router-dom";
+
 export default function Helpers() {
     return(
-    <>
+    <div className="main-container">
+      <div className="bottom-link-container">
+        <NavLink to = '/tutors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a tutuor
+        </NavLink>
+        <NavLink to = '/coordinators-mentors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Mentor/ Coordinator
+        </NavLink>
+        <NavLink to = '/curriculum-developers' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Curriculum Developer
+        </NavLink>
+        <NavLink to = '/technology-implementors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+          Become a Technology Implementor
+        </NavLink>
+      </div>
       <div>
         <div>
           <h1 className="tutor-title">Be part of: Our Well-Oiled Machine Crew</h1>
@@ -19,6 +35,6 @@ export default function Helpers() {
           </ul>
         </section>
       </div>
-    </>
+    </div>
     );
 }

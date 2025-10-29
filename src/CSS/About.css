@@ -1,164 +1,38 @@
-/* :root {
-  --header-h: 135px;  /*match your fixed header height*
-} */
-
-/* .btn-block {
-  position: sticky;
-  top: var(--header-h);        /* sit directly below the header *
-  z-index: 950;                /* below header (e.g., header z=1000) *
-  background: #fff;            /* not transparent *
-  box-shadow: 0 1px 2px rgba(0,0,0,.08);
-  background-color: #213e8c;
-} */
-
-/* optional: tidy the inner title/buttons */
-/* .btn-block .title { 
-    margin: 0 0 0px 0; 
-} */
-
-/* .button-block { 
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center;
-  background-color: #213e8c;
-} */
-
-/* .btn {
-  background-color: #df3467; 
-  color: white;               /* text color *
-  padding: 10px 20px;
-  border: none;
-  border-radius: 0px;         /*rounded corners *
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-} */
-
-.btn:hover {
-  background-color: #f4abc2; /* darker on hover */
-}
-
-/* .page-content {
-  width: 60%;
-  margin: 0 auto;          /* centers horizontally *
-  box-sizing: border-box;
-} */
-
-/* .page-content h2 {
-   font-size: 38px !important; 
-   margin-bottom: 2px;
-} */
-
-/* .page-content p {
-  line-height: 2;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-}
-
-.page-content li {
-  line-height: 2;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  text-align: left;
-} */
-
-/* .abt-text-container {
-  width: 60%;
-  font-size: clamp(32px, 2.2vw, 24px) !important;
-  font-style: italic;
-  color: #ce3965;
-  line-height: 1.2 !important;
-  padding: 0 !important;
-  width: 60%;
-  margin: 0 auto;  
-} */
-
 /* ---------- Responsive tokens ---------- */
 :root {
   --header-h: 120px;                 /* desktop header height (adjust if needed) */
-  /*--btnbar-py: 8px;                  /* vertical padding for the button bar */
-  --btnbar-gap: 10px;
   --content-max: 1100px;             /* max readable width on large screens */
 }
 
 /* Tablet */
-@media (max-width: 992px) {
-  :root { --header-h: 96px; }
-}
+/* @media (max-width: 992px) { */
+  /* :root { --header-h: 96px; } */
+/* } */
 
 /* Mobile */
-@media (max-width: 600px) {
-  :root { --header-h: 64px; }
-}
-
-/* If you scroll to anchors, keep them visible below header+bar (optional) */
-html {
-  scroll-padding-top: calc(var(--header-h) + 12px);
-}
-
-/* ---------- Sticky block below header ---------- */
-.btn-block {
-  position: sticky;
-  top: var(--header-h);              /* sits directly under fixed header */
-  z-index: 950;
-  background: #213e8c;               /* non-transparent */
-  box-shadow: 0 1px 2px rgba(0,0,0,.08);
-  /* padding: clamp(12px, 3vw, 0px); */
-  color: #fff;
-}
-
-
-/* Title inside the sticky area */
-.btn-block .title {
-  margin: 0 0 6px 0;
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  line-height: 1.2;
-}
-
-/* Button row: wraps nicely on small screens */
-.button-block {
-  display: flex;
-  flex-wrap: wrap;
-  /* gap: var(--btnbar-gap); */
-  justify-content: center;
-}
+/* @media (max-width: 600px) { */
+  /* :root { --header-h: 64px; } */
+/* } */
 
 /* Small screens: vertical list */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .button-block {
-    flex-direction: column;   /* stack vertically */
+    flex-direction: column;   /* stack vertically *
     flex-wrap: nowrap;
-    align-items: center;     /* make buttons full width */
-    gap: var(--btnbar-gap, 10px);
+    align-items: center;     /* make buttons full width *
+    gap: 2px;
   }
 
   .button-block .btn {
     width: 35%;
-    max-width: 520px;         /* optional cap */
-    margin-inline: auto;      /* centers when capped */
+    max-width: 520px;         /* optional cap *
+    margin-inline: auto;      /* centers when capped *
   }
-}
+} */
 
-.btn {
-  background-color: #df3467;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-  font-size: clamp(14px, 1.2vw + 10px, 16px);
-  padding: clamp(8px, 1.2vw + 6px, 10px) clamp(14px, 2vw, 20px);
-  line-height: 1.2;
-  transition: background-color .2s ease;
-}
-
-@media (hover:hover) and (pointer:fine) {
+/* @media (hover:hover) and (pointer:fine) {
   .btn:hover { background-color: #f4abc2; }
-}
-
-.btn:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
+} */
 
 .page-content {
   width: min(60%, var(--content-max));  /* 60% on wide screens, capped */

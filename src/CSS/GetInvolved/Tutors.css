@@ -43,6 +43,13 @@
   break-inside: avoid; 
 }
 
+.bottom-link-container {
+  padding: 20px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+}
+
 /* Tablet and up */
 @media (min-width: 768px){
   .tutor-list{ grid-template-columns: 1fr 1fr; }

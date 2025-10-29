@@ -16,8 +16,8 @@
   display: grid;
   grid-template-columns: minmax(220px, 1fr) 3fr;
   grid-template-areas: "links text";
-  gap: clamp(12px, 3vw, 50px);
-  max-width: 1200px;
+  gap: clamp(10px, 3vw, 10px);
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: clamp(12px, 4vw, 24px);
   box-sizing: border-box;

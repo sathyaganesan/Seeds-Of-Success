@@ -1,6 +1,22 @@
+import { NavLink } from "react-router-dom";
+
 export default function CurriculumDev() {
-    return(
-    <>
+  return(
+  <div className="main-container">
+    <div className="bottom-link-container">
+      <NavLink to = '/tutors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+        Become a tutuor
+      </NavLink>
+      <NavLink to = '/coordinators-mentors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+        Become a Mentor/ Coordinator
+      </NavLink>
+      <NavLink to = '/technology-implementors' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+        Become a Technology Implementor
+      </NavLink>
+      <NavLink to = '/behind-the-scene-helpers' className={({ isActive }) => isActive ? "involved-link active" : "involved-link"}>
+        Behind the Scene Helpers
+      </NavLink>
+    </div>
     <div>
         <div>
           <h1 className="tutor-title">Your Role as a Curriculum Developer</h1>
@@ -29,6 +45,6 @@ export default function CurriculumDev() {
             </ul>
         </section>
     </div>
-    </>
-    );
+  </div>
+  );
 }
