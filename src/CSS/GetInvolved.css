@@ -12,6 +12,8 @@
   line-height: 1.2;
 }
 
+ :root { --header-h: 100px; }  /*match your real header height */
+
 .main-container {
   display: grid;
   grid-template-columns: minmax(220px, 1fr) 3fr;
@@ -21,6 +23,7 @@
   margin: 0 auto;
   padding: clamp(12px, 4vw, 24px);
   box-sizing: border-box;
+  min-height: calc(100vh - var(--header-h));   /*👈 fills screen under header */
 }
 
 .link-container { 

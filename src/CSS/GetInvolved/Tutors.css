@@ -18,7 +18,7 @@
   margin-top: clamp(12px, 2.5vw, 24px);
   padding-inline: clamp(16px, 5vw, 40px);
   max-width: 1000px;
-   margin-inline: auto;           /* center on wide screens */
+  margin-inline: auto;           /* center on wide screens */
   box-sizing: border-box;
 }
 
@@ -47,7 +47,8 @@
   padding: 20px;
   display: flex; 
   flex-direction: column; 
-  justify-content: center;
+  justify-content: start;
+  border-right: 3px solid #e5e7eb;
 }
 
 /* Tablet and up */
@@ -58,4 +59,16 @@
 /* Optional: very large screens */
 @media (min-width: 1200px){
   .list-container{ max-width: 1200px; }
+
+  .bottom-link-container {
+    border-right: 3px solid #e5e7eb;
+  }
+}
+
+@media (max-width: 480px){
+  .bottom-link-container {
+    /* display: flex;  */
+    border-right: 0;
+    border-bottom: 3px solid #e5e7eb;
+  }
 }

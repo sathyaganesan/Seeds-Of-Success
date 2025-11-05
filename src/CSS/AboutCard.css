@@ -1,6 +1,6 @@
 :root {
   --header-h: 100px;   /* desktop header height (adjust if needed) */
-  --btnbar-h: 256px;   /* your sticky button block */
+  --btnbar-h: 140px;   /* your sticky button block */
 }
 
 /* ---------- Sticky block below header ---------- */
@@ -90,6 +90,29 @@
   padding: 20px;
 }
 
+@media (max-width: 480px){
+  :root{
+    /* Example if the button block stacks and gets taller */
+    --header-h: 98px;
+    --btnbar-h: 150px;  /* adjust to your actual btn-block height */
+  }
+}
+
+/* Tablet and up (override if header/btn heights change) */
+@media (min-width: 768px){
+  :root{
+    --header-h: 120px;
+    --btnbar-h: 70px;
+  }
+}
+
+@media (min-width: 1024px){
+  :root{
+    --header-h: 146px;
+    --btnbar-h: 85px;
+  }
+}
+
 /* Very small phones: ensure full width */
 @media (max-width: 480px){
   .AboutCard { max-width: 100%; }
@@ -109,4 +132,3 @@
     margin-inline: auto;     /* keeps centered when capped */
   }
 }
-
